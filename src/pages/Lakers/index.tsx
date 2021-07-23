@@ -6,6 +6,8 @@ import LeBron from "./LeBron";
 
 export default function Lakers(props: any) {
     let { match, history } = props;
+    console.log(props);
+
     function handleJump() {
         history.push({
             pathname: "/heat",
@@ -17,7 +19,7 @@ export default function Lakers(props: any) {
     return (
         <Fragment>
             <section>洛杉矶·湖人</section>
-            <ul>
+            {/* <ul>
                 <li>
                     <Link to={match.url + "/davis"}>戴维斯</Link>
                 </li>
@@ -27,14 +29,14 @@ export default function Lakers(props: any) {
                 <li>
                     <Link to={match.url + "/lebron"}>詹姆斯</Link>
                 </li>
-            </ul>
-            <section>
+            </ul> */}
+            {/* <section>
                 <button onClick={handleJump}>热火队</button>
-            </section>
-            <Route path={match.url + "/davis"} component={Davis}></Route>
+            </section> */}
+            {/* <Route path={match.url + "/davis"} component={Davis}></Route>
             <Route path={match.url + "/kuzma"} component={Kuzma}></Route>
             <Route path={match.url + "/lebron"} component={LeBron}></Route>
-            <Redirect from={match.url} to={match.url + "/lebron"}></Redirect>
+            <Redirect from={match.url} to={match.url + "/lebron"}></Redirect> */}
         </Fragment>
     )
 }

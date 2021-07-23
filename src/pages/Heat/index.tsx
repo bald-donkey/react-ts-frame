@@ -3,10 +3,12 @@ import qr from "query-string"
 
 export default function Heat(props: any) {
     let { location } = props
+    console.log(props);
 
-    console.log(location.params);
-    console.log(location.state);
-    console.log(location.size);
+
+    // console.log(location.params);
+    // console.log(location.state);
+    // console.log(location.size);
 
     // let params = qr.parse(location.params)
     // let state = qr.parse(location.state)

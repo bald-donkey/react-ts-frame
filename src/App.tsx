@@ -1,13 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Link, Route, Switch, Redirect } from "react-router-dom"
 import './assets/css/App.css';
+import routes from "./router"
+import CompireRouter from './router/CompireRouter';
 import Heat from './pages/Heat';
 import Lakers from './pages/Lakers';
 import Nets from './pages/Nets';
 import Page404 from './pages/Page404';
 
 
-function App() {
+function App(props: any) {
     return (
         <BrowserRouter>
             {/* <div className="App"> */}
@@ -24,11 +26,13 @@ function App() {
             </ul>
             {/* </div> */}
             <Switch>
-                <Route path="/heat" component={Heat}></Route>
+                <CompireRouter {...props} routes={routes}></CompireRouter>
+
+                {/* <Route path="/heat" component={Heat}></Route>
                 <Route path="/lakers" component={Lakers}></Route>
                 <Route path="/nets" component={Nets}></Route>
-                <Redirect from="/" to="/lakers"></Redirect>
-                <Route component={Page404}></Route>
+                <Route component={Page404}></Route> */}
+                {/* <Redirect from="/" to="/lakers"></Redirect> */}
             </Switch>
         </BrowserRouter>
     );
