@@ -35,10 +35,10 @@ let routes = [
         path: "/nets",
         component: Nets
     },
-    {
-        // path: "/404",
-        component: Page404
-    }
+    // {
+    //     path: "/404",
+    //     component: Page404
+    // }
 ]
 
 export default routes;
