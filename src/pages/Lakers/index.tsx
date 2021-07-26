@@ -1,10 +1,6 @@
 import React, { Fragment } from "react";
-import { Link, Route, Redirect } from "react-router-dom"
+import { Link } from "react-router-dom"
 import CompireRouter from '../../router/CompireRouter';
-import router from '../../router'
-import Davis from "./Davis";
-import Kuzma from "./Kuzma";
-import LeBron from "./LeBron";
 
 export default function Lakers(props: any) {
     let { computedMatch, history, routes, match } = props;

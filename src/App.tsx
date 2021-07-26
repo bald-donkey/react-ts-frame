@@ -4,16 +4,18 @@ import './assets/css/App.css';
 import routes from "./router"
 import CompireRouter from './router/CompireRouter';
 import Page404 from './pages/Page404';
+import Carousel_JS from "./component/Carousel"
 
 
 function App(props: any) {
-    console.log("----", props);
     return (
         <BrowserRouter>
             <Fragment>
+                <Carousel_JS></Carousel_JS>
+                <div className="heat">热火</div>
                 <ul>
                     <li>
-                        <Link to="/heat">热火</Link>
+                        <Link to="/heat" className="heat">热火</Link>
                     </li>
                     <li>
                         <Link to="/lakers">湖人</Link>
