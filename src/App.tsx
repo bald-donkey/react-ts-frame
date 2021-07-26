@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter, Link, Route, Switch, Redirect } from "react-router-dom"
-import './assets/css/App.css';
+import AppStyle from './assets/css/App.module.css';
 import routes from "./router"
 import CompireRouter from './router/CompireRouter';
 import Page404 from './pages/Page404';
@@ -15,7 +15,7 @@ function App(props: any) {
                 <div className="heat">热火</div>
                 <ul>
                     <li>
-                        <Link to="/heat" className="heat">热火</Link>
+                        <Link to="/heat" className={AppStyle.heat}>热火</Link>
                     </li>
                     <li>
                         <Link to="/lakers">湖人</Link>

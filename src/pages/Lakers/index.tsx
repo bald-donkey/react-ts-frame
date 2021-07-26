@@ -1,12 +1,29 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom"
+import { connect } from 'react-redux'
 import CompireRouter from '../../router/CompireRouter';
 
-export default function Lakers(props: any) {
-    let { computedMatch, history, routes, match } = props;
-    console.log("=====", props);
+const mapState = (state: any) => {
+    return {
+        state
+    }
+}
 
-    function handleJump() {
+const mapDispatch = (dispatch: any) => {
+    return {}
+}
+
+const connects: Function = connect;
+
+@connects(mapState, mapDispatch)
+class Lakers extends React.Component {
+    constructor(props: any) {
+        super(props);
+        // let { computedMatch, history, routes, match } = this.props;
+        // console.log("=====", this.props);
+    }
+
+    handleJump(history: any) {
         history.push({
             pathname: "/heat",
             state: { name: "sai" },
@@ -14,29 +31,39 @@ export default function Lakers(props: any) {
             size: { size: "36" } // 可以随意传参
         })
     }
-    return (
-        <Fragment>
-            <section>洛杉矶·湖人</section>
-            <ul>
-                <li>
-                    <Link to={match.url + "/davis"}>戴维斯</Link>
-                </li>
-                <li>
-                    <Link to={"/lakers/kuzma"}>库兹马</Link>
-                </li>
-                <li>
-                    <Link to={match.url + "/lebron"}>詹姆斯</Link>
-                </li>
-            </ul>
 
-            {/* <CompireRouter routes={router[1].children}></CompireRouter> */}
-            <CompireRouter routes={routes}></CompireRouter>
+    render() {
+        console.log("=====", this.props);
+
+        let { computedMatch, history, routes, match, state }: any = this.props;
+
+        return (
+
+            <Fragment>
+                <section>{state.Goods[0]}</section>
+                <ul>
+                    <li>
+                        <Link to={match.url + "/davis"}>戴维斯</Link>
+                    </li>
+                    <li>
+                        <Link to={"/lakers/kuzma"}>库兹马</Link>
+                    </li>
+                    <li>
+                        <Link to={match.url + "/lebron"}>詹姆斯</Link>
+                    </li>
+                </ul>
+
+                {/* <CompireRouter routes={router[1].children}></CompireRouter> */}
+                <CompireRouter routes={routes}></CompireRouter>
 
 
-            <section>
-                <button onClick={handleJump}>热火队</button>
-            </section>
+                <section>
+                    <button onClick={() => this.handleJump(history)}>热火队</button>
+                </section>
 
-        </Fragment>
-    )
+            </Fragment>
+        )
+    }
 }
+
+export default Lakers;
