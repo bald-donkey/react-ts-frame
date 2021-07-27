@@ -19,6 +19,7 @@ const connects: Function = connect;
 class Lakers extends React.Component {
     constructor(props: any) {
         super(props);
+        this.state = {};
         // let { computedMatch, history, routes, match } = this.props;
         // console.log("=====", this.props);
     }
