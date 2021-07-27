@@ -36,7 +36,7 @@ class Lakers extends React.Component {
     render() {
         console.log("=====", this.props);
 
-        let { computedMatch, history, routes, match, state }: any = this.props;
+        let { history, routes, match, state }: any = this.props;
 
         return (
 

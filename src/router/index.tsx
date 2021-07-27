@@ -2,7 +2,7 @@
 import Heat from "../pages/Heat"
 import Lakers from "../pages/Lakers"
 import Nets from "../pages/Nets"
-import Page404 from "../pages/Page404"
+// import Page404 from "../pages/Page404"
 import Davis from "../pages/Lakers/Davis"
 import Kuzma from "../pages/Lakers/Kuzma"
 import LeBron from "../pages/Lakers/LeBron"

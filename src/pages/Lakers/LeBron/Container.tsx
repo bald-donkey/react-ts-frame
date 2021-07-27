@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 import {connect} from 'react-redux'
-import store from '../../../store'
+// import store from '../../../store'
 import action from '../../../store/actions'
 import Ui from "./Ui"
 
