@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import qr from "query-string"
+// import qr from "query-string"
 
 export default function Heat(props: any) {
-    let { location } = props
+    // let { location } = props
     console.log(props);
 
 

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter, Link, Route, Switch, Redirect } from "react-router-dom"
+import { BrowserRouter, Link, Route, Switch } from "react-router-dom"
 import AppStyle from './assets/css/App.module.css';
 import routes from "./router"
 import CompireRouter from './router/CompireRouter';

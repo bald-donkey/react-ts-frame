@@ -1,2 +1,8 @@
-const Base_url = 'http://chst.vip:8081/data/index.json'
-export const getProduct = () => fetch(Base_url).then(body => body.json())
+import axios from '../service/request'
+
+// export const getProduct = () => fetch('/api/data/index.json').then(body => body.json())
+
+export const getProduct = () => axios({
+  url: '/data/index.json',
+  method: 'get'
+})

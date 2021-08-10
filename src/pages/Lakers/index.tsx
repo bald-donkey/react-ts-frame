@@ -19,6 +19,7 @@ const connects: Function = connect;
 class Lakers extends React.Component {
     constructor(props: any) {
         super(props);
+        this.state = {};
         // let { computedMatch, history, routes, match } = this.props;
         // console.log("=====", this.props);
     }
@@ -35,7 +36,7 @@ class Lakers extends React.Component {
     render() {
         console.log("=====", this.props);
 
-        let { computedMatch, history, routes, match, state }: any = this.props;
+        let { history, routes, match, state }: any = this.props;
 
         return (
 

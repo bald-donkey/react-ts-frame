@@ -17,7 +17,7 @@ export default class CompireRouter extends React.Component {
     // 5.得到相同数量 route 组件，并返回出去生成可使用<Route />
     renderContent () { // 用于通过数据生成 Route
         let { routes = [] } = this.props;
-        console.log("+++", this.props);
+        // console.log("+++", this.props);
 
         // Route 中 render 属性的作用： 可以用来渲染嵌套的组件
         let routesEl = routes.map(
