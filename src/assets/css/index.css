@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td,div{margin:0;padding:0} 
+* { touch-action: pan-y; }
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff; word-wrap:break-word;}
+a{text-decoration:none}
+em,i,strong,b{font-style:normal;font-weight: 100;}
+li{list-style:none}
+img{border:0;display: block;} 
+table{border-collapse:collapse;border-spacing:0}
+.indent{text-indent:2em}
+.noborder{border:0;}
+.ellipsis{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.clear:after{content:"." ;display:block;clear:both;height:0;overflow:hidden;visibility:hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 设计稿未1280px */
+html {
+  font-size: 7.8125vw;
 }
+
+#root{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* html{	font-size:   100 / 屏幕宽度的1%  === ?vw}
+				
+			以设计稿屏幕宽度640px为例
+				100/6.4=15.625vw       1rem=100px
+				html{font-size: 15.625vw}
+			
+			公式：
+			html{font-size:(100px/屏幕宽度的1%（?px））vw}
+			解释：通过用100除以当前屏幕宽度的1%
+				计算出100px占当前屏幕的多少vw */

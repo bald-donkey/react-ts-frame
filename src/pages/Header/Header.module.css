@@ -1,0 +1,44 @@
+.header {
+  height: 1.3rem;
+  width: 12.2rem;
+  background: url('../../assets/imgs/taiTou1.png') no-repeat 0/12.2rem 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  height: 0.66rem;
+  padding: 0.24rem 0 0 1.56rem;
+  font-size: 0.46rem;
+  font-family: Source Han Serif SC;
+  font-weight: bold;
+  line-height: 0.66rem;
+  color: #FFFFFF;
+}
+
+.right {
+  height: 0.7rem;
+  padding: 0.4rem 0.85rem 0 0;
+  font-family: PingFang SC;
+  display: flex;
+  flex-direction: column;
+}
+
+.right .right_top {
+  height: 0.42rem;
+  font-size: 0.30rem;
+  font-weight: 500;
+  line-height: 0.42rem;
+  color: #FFFFFF;
+}
+
+.right .right_bottom {
+
+  height: 0.28rem;
+  font-size: 0.20rem;
+  font-weight: 500;
+  line-height: 0.28rem;
+  color: #FFFFFF;
+  opacity: 1;
+  transform: scale(0.7);
+}
