@@ -1,7 +1,7 @@
 // 1. 引入组件
 import React from 'react'
 import Page from '../pages'
-import Heat from "../pages/Heat"
+import Heat from "../pages/Heat/index"
 
 // import Lakers from "../pages/Lakers"
 // import Nets from "../pages/Nets"
