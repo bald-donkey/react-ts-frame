@@ -2447,7 +2447,7 @@ ansi-styles@^4.0.0, ansi-styles@^4.1.0:
 
 antd-mobile@^2.3.4:
   version "2.3.4"
-  resolved "https://registry.nlark.com/antd-mobile/download/antd-mobile-2.3.4.tgz?cache=0&sync_timestamp=1626944685012&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fantd-mobile%2Fdownload%2Fantd-mobile-2.3.4.tgz#8f584707b30343d102f3ca10fdaf677e2a5d1cc8"
+  resolved "https://registry.nlark.com/antd-mobile/download/antd-mobile-2.3.4.tgz#8f584707b30343d102f3ca10fdaf677e2a5d1cc8"
   integrity sha1-j1hHB7MDQ9EC88oQ/a9nfipdHMg=
   dependencies:
     array-tree-filter "~2.1.0"

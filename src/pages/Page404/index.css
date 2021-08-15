@@ -1,0 +1,20 @@
+.bg__box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.bg__container {
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/imgs/bg_404.png') no-repeat bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whiteSpace {
+  height: 15%;
+}
