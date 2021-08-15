@@ -10,11 +10,11 @@ import Heat from "../pages/Heat/index"
 // import LeBron from "../pages/Lakers/LeBron"
 // import Page404 from '../pages/Page404'
 
-const Lakers = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers'))
-const Nets = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Nets'))
-const Davis = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/Davis'))
-const Kuzma = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/Kuzma'))
-const LeBron = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/LeBron'))
+const Lakers = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/index'))
+const Nets = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Nets/index'))
+const Davis = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/Davis/index'))
+const Kuzma = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/Kuzma/index'))
+const LeBron = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/LeBron/index'))
 const Page404 = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Page404'))
 
 
