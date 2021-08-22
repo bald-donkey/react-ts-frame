@@ -4,7 +4,7 @@ import CompireRouter from '../../router/CompireRouter'
 
 export default function Lakers(props: any) {
   let { match, history } = props;
-  console.log(props);
+  // console.log(props);
 
   function handleJump() {
     history.push({

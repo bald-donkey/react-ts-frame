@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter, Link } from "react-router-dom"
 import './assets/css/App.css';
 import routes from "./router"
@@ -19,7 +19,9 @@ function App(props: any) {
           <Link to="/nets">篮网</Link>
         </li>
       </ul>
-      <CompireRouter {...props} routes={routes}></CompireRouter>
+      <Suspense fallback={<p>加载中.....</p>}>
+        <CompireRouter {...props} routes={routes}></CompireRouter>
+      </Suspense>
     </BrowserRouter>
   );
 }

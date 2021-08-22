@@ -1,5 +1,5 @@
 import React, { Suspense } from "react"
-import { Route, Switch } from "react-router-dom"
+import { Route, Switch, Redirect } from "react-router-dom"
 // import Loading from '../pages/Loading'
 
 /**
@@ -18,20 +18,23 @@ export default class CompireRouter extends React.Component {
   // 5.得到相同数量 route 组件，并返回出去生成可使用<Route />
   renderContent () { // 用于通过数据生成 Route
     let { routes = [] } = this.props;
-    let length = routes.length - 1
+    let length = routes.length
 
     let routesEl = routes.map(
       (route, index) => {
-
-        if (length === index) { // 配置404
-          return <Route component={route.component} key={index}></Route>
-        }
+        // if (length === index) { // 配置404
+        //   return <Route component={route.component} key={index}></Route>
+        // }
         return <Route path={route.path} exact={route.path === '/'} key={index} render={
           (props) => {
             return <route.component {...props} routes={route.children}></route.component>
           }
         }></Route>
       }
+    )
+
+    routesEl.push(
+      <Redirect to='/notFound' key={length}></Redirect>
     )
 
     this.setState({
@@ -46,11 +49,11 @@ export default class CompireRouter extends React.Component {
   render () {
     return (
       // <Suspense fallback={<Loading></Loading>}>
-      <Suspense fallback={<p>加载中.....</p>}>
-        <Switch>
-          {this.state.c}
-        </Switch>
-      </Suspense>
+      // <Suspense fallback={<p>加载中.....</p>}>
+      <Switch>
+        {this.state.c}
+      </Switch>
+      // </Suspense>
     )
   }
 }
