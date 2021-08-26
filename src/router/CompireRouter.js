@@ -1,6 +1,5 @@
-import React, { Suspense } from "react"
+import React from "react"
 import { Route, Switch, Redirect } from "react-router-dom"
-// import Loading from '../pages/Loading'
 
 /**
  * 3. 这是一个高阶组件，用于编译路由
@@ -22,17 +21,17 @@ export default class CompireRouter extends React.Component {
 
     let routesEl = routes.map(
       (route, index) => {
-        // if (length === index) { // 配置404
-        //   return <Route component={route.component} key={index}></Route>
-        // }
+
         return <Route path={route.path} exact={route.path === '/'} key={index} render={
           (props) => {
             return <route.component {...props} routes={route.children}></route.component>
           }
         }></Route>
+
       }
     )
 
+    // 6. 配置404页面
     routesEl.push(
       <Redirect to='/notFound' key={length}></Redirect>
     )
@@ -48,12 +47,9 @@ export default class CompireRouter extends React.Component {
 
   render () {
     return (
-      // <Suspense fallback={<Loading></Loading>}>
-      // <Suspense fallback={<p>加载中.....</p>}>
       <Switch>
         {this.state.c}
       </Switch>
-      // </Suspense>
     )
   }
 }

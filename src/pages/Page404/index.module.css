@@ -13,33 +13,41 @@
 }
 
 .bg__box .bg__container .head404 {
-  width: 580px;
-  height: 234px;
+  width: 35%;
+  height: 30%;
   margin: 0px auto 0 auto;
-  background: url("../../assets/imgs/head404.png") no-repeat;
+  background: url("../../assets/imgs/head404.png") no-repeat 0/100%;
 }
 
 .bg__box .bg__container .txtbg404 {
-  width: 499px;
-  height: 169px;
-  margin: 10px auto 0 auto;
-  background: url("../../assets/imgs/txtbg404.png") no-repeat;
+  width: 35%;
+  height: 30%;
+  margin: 0 auto;
+  background: url("../../assets/imgs/txtbg404.png") no-repeat 0 -10%/100%;
 }
 
 .bg__box .bg__container .txtbg404 .txtbox {
-  width: 390px;
+  width: 200%;
   position: relative;
-  top: 30px;
-  left: 60px;
+  top: 10%;
+  left: 14%;
   color: #eee;
-  font-size: 14px;
 }
 
 .bg__box .bg__container .txtbg404 .txtbox p {
-  margin: 5px 0;
-  line-height: 18px;
+  margin: 1% 0;
+}
+
+.bg__box .bg__container .txtbg404 .txtbox p a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.bg__box .bg__container .txtbg404 .txtbox p a:hover {
+  color: #fc9d1d;
+  text-decoration: underline;
 }
 
 .bg__box .bg__container .txtbg404 .txtbox .paddingbox {
-  padding-top: 15px;
+  padding-top: 1%;
 }

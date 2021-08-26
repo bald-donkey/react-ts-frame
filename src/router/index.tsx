@@ -17,7 +17,7 @@ const Page404 = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pag
 let routes = [
   {
     path: '/',
-    component: Page
+    component: Page,
   },
   {
     path: "/heat",
@@ -26,6 +26,7 @@ let routes = [
   {
     path: "/lakers",
     component: Lakers,
+    redirect: '/lakers/davis',
     children: [
       {
         path: "/lakers/davis",
