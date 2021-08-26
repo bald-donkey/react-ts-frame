@@ -14,7 +14,7 @@ export default function Heat(props: any) {
             <Link to="/lakers">湖人</Link>
           </li>
           <li>
-            <Link to="/nets">篮网</Link>
+            <Link to="/product">产品</Link>
           </li>
         </ul>
       </div>

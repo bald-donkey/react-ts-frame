@@ -6,7 +6,7 @@ import Heat from "../pages/Heat"
 
 
 const Lakers = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/index'))
-const Nets = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Nets/index'))
+const Product = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Product/index'))
 const Davis = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/Davis/index'))
 const Kuzma = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/Kuzma/index'))
 const LeBron = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/LeBron/index'))
@@ -47,8 +47,8 @@ let routes = [
     ]
   },
   {
-    path: "/nets",
-    component: Nets
+    path: "/product",
+    component: Product
   },
   {
     path: "/notFound",
