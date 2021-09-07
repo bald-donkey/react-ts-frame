@@ -27,7 +27,7 @@ class Container extends React.Component {
 
   render () {
     let { Goods } = this.props; // 返回的对象再次解构
-    let { isFetching, data, error } = Goods;
+    let { isFetching, data = [], error } = Goods;
     console.log(Goods);
 
     if (isFetching) {
