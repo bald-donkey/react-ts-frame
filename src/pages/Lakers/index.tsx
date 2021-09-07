@@ -10,7 +10,7 @@ export default class Lakers extends React.Component<any, any> {
 
 
   componentDidMount() {
-    this.props.history.push({ pathname: '/lakers/davis' })
+    // this.props.history.push({ pathname: '/lakers/davis' })
   }
 
   handleJump() {

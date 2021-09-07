@@ -40,10 +40,10 @@ let routes = [
         path: "/lakers/lebron",
         component: LeBron
       },
-      {
-        path: "/notFound",
-        component: Page404
-      }
+      // {
+      //   path: "/notFound",
+      //   component: Page404
+      // }
     ]
   },
   {
