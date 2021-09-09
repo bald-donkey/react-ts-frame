@@ -4,6 +4,7 @@ import { Provider } from "react-redux"
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import "lib-flexible"
 import './assets/css/index.css';
+import FirstScreen from './pages/FirstScreen/index'
 import App from './App';
 import store from './store'
 
@@ -21,9 +22,8 @@ function listen() {
     ReactDOM.render(
       <Provider store={store}>
         <Router>
-          {/* <Route path="/" component={FirstScreen} /> */}
           {/* 资源未加载完成时调用 */}
-          <Route path="/" component={() => <div>你个大秃驴</div>} />
+          <Route path="/" component={FirstScreen} />
         </Router>
       </Provider>,
       document.getElementById('root')
