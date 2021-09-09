@@ -1,29 +1,20 @@
-import { Fragment } from 'react';
-import { BrowserRouter, Link } from "react-router-dom"
-import AppStyle from './assets/css/App.module.css';
+import { Fragment, Suspense } from 'react';
+import { BrowserRouter } from "react-router-dom"
 import routes from "./router"
 import CompireRouter from './router/CompireRouter';
 import Carousel_JS from "./component/Carousel"
+import Loading from './component/Loading';
 
 
 function App(props: any) {
   return (
     <BrowserRouter>
       <Fragment>
-        <Carousel_JS></Carousel_JS>
-        <div className="heat">热火</div>
-        <ul>
-          <li>
-            <Link to="/heat" className={AppStyle.heat}>热火</Link>
-          </li>
-          <li>
-            <Link to="/lakers">湖人</Link>
-          </li>
-          <li>
-            <Link to="/nets">篮网</Link>
-          </li>
-        </ul>
-        <CompireRouter {...props} routes={routes}></CompireRouter>
+        <Suspense fallback={<Loading></Loading>}>
+          <Carousel_JS></Carousel_JS>
+          <CompireRouter {...props} routes={routes}></CompireRouter>
+        </Suspense>
+
       </Fragment>
     </BrowserRouter>
   );

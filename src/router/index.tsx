@@ -3,13 +3,6 @@ import React from 'react'
 import Page from '../pages'
 import Heat from "../pages/Heat/index"
 
-// import Lakers from "../pages/Lakers"
-// import Nets from "../pages/Nets"
-// import Davis from "../pages/Lakers/Davis"
-// import Kuzma from "../pages/Lakers/Kuzma"
-// import LeBron from "../pages/Lakers/LeBron"
-// import Page404 from '../pages/Page404'
-
 const Lakers = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/index'))
 const Nets = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Nets/index'))
 const Davis = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/Lakers/Davis/index'))
@@ -51,7 +44,7 @@ let routes = [
     component: Nets
   },
   {
-    path: "/404",
+    path: "/notFound",
     component: Page404
   }
 ]

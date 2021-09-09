@@ -55,7 +55,7 @@ class Lakers extends React.Component<any, any> {
         </ul>
 
         {/* <CompireRouter routes={router[1].children}></CompireRouter> */}
-        <CompireRouter routes={routes}></CompireRouter>
+        <CompireRouter  {...this.props} routes={routes}></CompireRouter>
 
 
         <section>
