@@ -1,9 +1,6 @@
 import React from 'react'
 import Page from '../pages/index'
 import Page404 from "../pages/Page404/index"
-// import TakeNumber from '../pages/TakeNumber/index'
-// import Welcome from '../pages/Welcome/index'
-// import InputData from '../pages/InputData/index'
 
 
 const TakeNumber = React.lazy(() => import(/*webpackChunkName:"tackNumber"*/'../pages/TakeNumber/index'))
@@ -27,7 +24,7 @@ let routes = [
     component: InputData
   },
   {
-    // path: "/404",
+    path: "/notFound",
     component: Page404
   },
 ]

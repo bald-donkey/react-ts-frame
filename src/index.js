@@ -7,6 +7,7 @@ import store from './store'
 import FirstScreen from './pages/FirstScreen/index'
 import App from './App';
 
+
 function listen () {
   if (document.readyState === 'complete') { // 资源加载完成
     ReactDOM.render(
@@ -29,10 +30,4 @@ function listen () {
 
 document.onreadystatechange = listen
 
-// ReactDOM.render(
-//   <Provider store={store}>
-//     <App />
-//   </Provider>,
-//   document.getElementById("root")
-// )
 
