@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom"
-import CompireRouter from '../../router/CompireRouter'
+import CompileRouter from '../../router/CompileRouter'
 
 export default class Lakers extends React.Component<any, any> {
   constructor(props: any) {
@@ -42,7 +42,7 @@ export default class Lakers extends React.Component<any, any> {
         <section>
           <button onClick={this.handleJump.bind(this)}>热火队</button>
         </section>
-        <CompireRouter {...this.props} routes={this.props.routes}></CompireRouter>
+        <CompileRouter {...this.props} routes={this.props.routes}></CompileRouter>
       </Fragment>
     )
   }

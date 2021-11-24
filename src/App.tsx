@@ -1,8 +1,7 @@
 import { Suspense } from 'react';
 import { BrowserRouter } from "react-router-dom"
-import './assets/css/App.css';
 import routes from "./router"
-import CompireRouter from './router/CompireRouter';
+import CompileRouter from './router/CompileRouter';
 import Loading from './component/Loading';
 
 
@@ -10,7 +9,7 @@ function App(props: any) {
   return (
     <BrowserRouter>
       <Suspense fallback={<Loading></Loading>}>
-        <CompireRouter {...props} routes={routes}></CompireRouter>
+        <CompileRouter {...props} routes={routes}></CompileRouter>
       </Suspense>
     </BrowserRouter>
   );

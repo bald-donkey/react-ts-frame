@@ -5,7 +5,7 @@ import { Route, Switch, Redirect } from "react-router-dom"
  * 3. 这是一个高阶组件，用于编译路由
  * 4. 根据传入的数据，进行遍历，创建同等数量的route，比如[{}, {}, {}]
  * */
-export default class CompireRouter extends React.Component {
+export default class CompileRouter extends React.Component {
   constructor(props) {
     super(props)
 
