@@ -1,4 +1,4 @@
-import Style from './index.module.css'
+import Style from './style/index.module.css'
 
 export default function ProductUi (props) {
   let { data } = props

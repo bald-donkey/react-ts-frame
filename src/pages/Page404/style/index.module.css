@@ -16,14 +16,14 @@
   width: 35%;
   height: 30%;
   margin: 0px auto 0 auto;
-  background: url("../../assets/images/page404/head404.png") no-repeat 0/100%;
+  background: url("../../../assets/images/page404/head404.png") no-repeat 0/100%;
 }
 
 .bg__box .bg__container .txt__bg404 {
   width: 35%;
   height: 30%;
   margin: 0 auto;
-  background: url("../../assets/images/page404/txtBg404.png") no-repeat 0 -10%/100%;
+  background: url("../../../assets/images/page404/txtBg404.png") no-repeat 0 -10%/100%;
 }
 
 .bg__box .bg__container .txt__bg404 .txt__box {

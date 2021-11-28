@@ -10,11 +10,15 @@ class FirstScreen extends Component<any, any> {
   render() {
     return (
       <div style={{
-        background: 'hotpink',
+        // background: 'hotpink',
         height: '100%',
-        width: '100%'
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: '24px'
       }}>
-        首屏渲染加载页面
+        努力加载中，请稍后......
       </div>
     )
   }

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import notFound from './index.module.scss'
+import notFound from './style/index.module.scss'
 
 export default function Page404(props: any) {
   let { history } = props;
